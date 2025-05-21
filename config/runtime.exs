@@ -32,6 +32,15 @@ if config_env() == :prod do
 
   config :editor, Editor.Repo,
     ssl: true,
+      ssl_opts: [
+        # Disable certificate verification for Render's PostgreSQL
+        verify: :verify_none,
+        # Alternative if you want full verification (requires CA cert):
+        # cacertfile: System.get_env("CA_CERT_PATH") || "/etc/ssl/certs/ca-certificates.crt"
+      ],
+      parameters: [
+        sslmode: "require"
+      ],
     url: database_url,
     pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
     socket_options: maybe_ipv6
