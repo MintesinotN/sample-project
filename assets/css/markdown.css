@@ -1,0 +1,20 @@
+/* Custom markdown styling */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.prose {
+  h1 { @apply text-3xl font-bold mt-6 mb-4; }
+  h2 { @apply text-2xl font-bold mt-5 mb-3; }
+  h3 { @apply text-xl font-bold mt-4 mb-2; }
+  p { @apply my-4; }
+  ul { @apply list-disc pl-6; }
+  ol { @apply list-decimal pl-6; }
+  blockquote { @apply border-l-4 border-gray-300 pl-4 italic; }
+  code { @apply bg-gray-100 px-1 rounded; }
+  pre { @apply bg-gray-800 text-gray-100 p-4 rounded overflow-x-auto; }
+  a { @apply text-blue-600 hover:underline; }
+  table { @apply border-collapse w-full my-4; }
+  th { @apply bg-gray-100 p-2 text-left border; }
+  td { @apply p-2 border; }
+}

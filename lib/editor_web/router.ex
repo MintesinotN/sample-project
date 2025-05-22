@@ -17,7 +17,8 @@ defmodule EditorWeb.Router do
   scope "/", EditorWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", EditorLive
+    post "/export/pdf", PDFController, :export
   end
 
   # Other scopes may use custom stacks.

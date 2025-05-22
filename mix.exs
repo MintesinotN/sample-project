@@ -32,6 +32,9 @@ defmodule Editor.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      # {:wkhtmltopdf, "~> 0.2"},
+      {:pdf_generator, "~> 0.6.2"},
+      {:earmark, "~> 1.4"},
       {:phoenix, "~> 1.7.21"},
       {:phoenix_ecto, "~> 4.5"},
       {:ecto_sql, "~> 3.10"},

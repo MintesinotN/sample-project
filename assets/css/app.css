@@ -2,4 +2,48 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+
+.editor-container {
+  display: flex;
+  height: 100vh;
+}
+
+.pane {
+  width: 50%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.markdown-pane {
+  background: #f5f5f5;
+}
+
+.markdown-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  resize: none;
+  padding: 1rem;
+  font-family: monospace;
+  background: transparent;
+}
+
+/* Make the output panel clearly visible */
+.html-pane {
+  background-color: #ffebee; /* Light red/pink background */
+  border: 3px dashed #f44336; /* Red dashed border */
+  padding: 20px;
+}
+
+/* Add flashing animation when content updates */
+@keyframes highlight {
+  0% { background-color: #ffebee; }
+  50% { background-color: #ffcdd2; }
+  100% { background-color: #ffebee; }
+}
+
+.html-pane-updated {
+  animation: highlight 1s;
+}
+
 /* This file is for your main application CSS */

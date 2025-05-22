@@ -53,6 +53,15 @@ config :tailwind,
     cd: Path.expand("../assets", __DIR__)
   ]
 
+# For wkhtmltopdf:
+config :pdf_generator,
+  wkhtml_path: System.find_executable("wkhtmltopdf") || "C:/path/to/wkhtmltopdf.exe"
+
+# OR for Chrome:
+# config :pdf_generator,
+#   generator: :chrome,
+#   chrome_path: System.find_executable("chrome") || "C:/path/to/chrome.exe"
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
