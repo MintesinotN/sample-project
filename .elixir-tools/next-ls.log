@@ -5081,3 +5081,17 @@ This will trigger a full recompilation in order to re-index your codebase.
 04:42:24.713 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 15ms
 
 04:42:25.038 [debug] handled notification client -> server workspace/didChangeWatchedFiles in 3ms
+
+04:48:52.704 [debug] handled notification client -> server textDocument/didOpen in 1ms
+
+04:48:52.745 id=520 [debug] handled request client -> server textDocument/codeAction in 819µs
+
+04:48:52.755 id=521 [debug] handled request client -> server textDocument/documentSymbol in 10ms
+
+04:48:53.017 id=522 [debug] handled request client -> server textDocument/documentSymbol in 1ms
+
+04:48:56.533 id=523 [debug] handled request client -> server textDocument/hover in 1002ms
+
+04:48:58.770 id=524 [debug] handled request client -> server textDocument/hover in 1005ms
+
+04:48:58.770 [debug] handled notification client -> server $/cancelRequest in 307µs
